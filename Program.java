@@ -20,9 +20,11 @@ public class Program {
 		int strength = reader.nextInt();
 		
 		int total = awareness + coordination + ingenuity + presence + resolve + strength;
+		int pointsleft = 24 - total;
 		
 		System.out.println("Awareness:" + awareness + " Coordination:" + coordination + " Ingenuity:" + ingenuity + " Presence:" + presence + " Resolve:" + resolve + " Strength:" + strength);
-		System.out.println("Total:" + total);
+		System.out.println("Attributes Total:" + total);
+		System.out.println("You have " + pointsleft + " Character Points left for traits. It's recommended you spend 18 points on attributes and 6 on traits.");
 	}
 
 }
